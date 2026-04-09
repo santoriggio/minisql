@@ -1,2 +1,3 @@
 minisql
 *.o
+*.csv

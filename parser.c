@@ -26,7 +26,7 @@ struct Command *parser(struct DA_Token *da){
 
     if(parsed > -1){
         cmd->type = CREATE_TABLE;
-        cmd->table_name = da->list[3].val;
+        cmd->table_name = da->list[2].val;
         cmd->column_count = 2;
         cmd->columns = malloc(sizeof(char*)*cmd->column_count);
         cmd->columns[0] = da->list[4].val;
